@@ -1,0 +1,30 @@
+.homeContainer {
+    color: rebeccapurple;
+}
+
+h1 {
+    background-color: rebeccapurple;
+    color: aliceblue;
+}
+
+.menuBarContainer {
+    background-color: rebeccapurple;
+}
+
+.menuItem:hover {
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+
+#logInForm {
+    width: 200px;
+    background: indigo;
+    color: white;
+}
+#logInForm a {
+    color: white;
+}
+
+#logInForm a:hover {
+    color: indigo;
+}
