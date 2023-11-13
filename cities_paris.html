@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="mainStyles.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<nav class="navbar sticky-top navbar-expand-md menuBarContainer">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggler01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler01">
+            <a class="navbar-brand" href="index.html">Bootstrap travels</a>
+            <ul class="navbar-nav">
+                <li class="nav-item menuItem">
+                    <a class="nav-link active" aria-current="page"
+                       href="index.html">Home</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="#">Continents</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="#">Countries</a>
+                </li>
+                <li class="nav-item dropdown menuItem">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Cities
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="cities_paris.html">Paris</a></li>
+                        <li><a class="dropdown-item" href="#">Milan</a></li>
+                        <li><a class="dropdown-item" href="#">Los
+                            Angeles</a></li>
+                        <li><a class="dropdown-item" href="#">Las
+                            Vegas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link disabled">Booking</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link">About</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-4" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button type="submit" class="btn btn-outline-light">Submit</button>
+            </form>
+            <div class="dropdown px-5 py-2">
+                <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">Log in
+                </button>
+                <form class="dropdown-menu px-1 py-1" id="logInForm">
+                    <div class="form-group py-1">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" id="emailInputField" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group pb-3">
+                        <label>Password:</label>
+                        <input type="password" class="form-control" id="passwordInputField" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-light">Log in</button>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Create account</a>
+                    <a class="dropdown-item" href="#">Forgot password</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row text-center">
+        <h1>Paris travel guide</h1>
+    </div>
+    <div class="container homeContainer">
+        <div class="row">
+            <div class="col-12">
+                <img src="images/paris.jpg" class="img-fluid img-thumbnail" alt="Paris main view">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="dropdown btn-group">
+                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">General</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"></a>History</li>
+                        <li><a class="dropdown-item" href="#"></a>Metro</li>
+                        <li><a class="dropdown-item" href="#"></a>Image gallery</li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-dark">Louvre</button>
+                    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Sculptures</a></li>
+                        <li><a class="dropdown-item" href="#">Paintings</a></li>
+                        <li><a class="dropdown-item" href="#">Ancient Egypt</a></li>
+                        <li><a class="dropdown-item" href="#">Ancient Greece</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Prices</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group dropdown-center">
+                    <button type="button" class="btn btn-outline-dark">Garnier Opera</button>
+                    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">History</a></li>
+                        <li><a class="dropdown-item" href="#">On air</a></li>
+                        <li><a class="dropdown-item" href="#">Prices</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-outline-dark">Eiffel Tower</button>
+                    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">History</a></li>
+                        <li><a class="dropdown-item" href="#">On air</a></li>
+                        <li><a class="dropdown-item" href="#">Prices</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-dark">Bateaux Mouches</button>
+                    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><h6 class="dropdown-header">Cruise on the Seine in Paris</h6></li>
+                        <li><a class="dropdown-item" href="#">Opening hours</a></li>
+                        <li><a class="dropdown-item" href="#">Prices</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn-outline-dark">Arc de Triomphe</button>
+                    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">History</a></li>
+                        <li><a class="dropdown-item" href="#">On air</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            Lorem ipsum i tak dalej
+        </div>
+    </div>
+</div>
+</body>
+</html>
